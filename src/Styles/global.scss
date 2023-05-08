@@ -1,0 +1,22 @@
+@import "./base";
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "Poppins";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: $color-light-grey-11;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.inputForm{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}

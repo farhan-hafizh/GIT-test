@@ -1,0 +1,2 @@
+export const FETCH_EMPLOYEES = 'App/FETCH_EMPLOYEES';
+export const SET_EMPLOYEES = 'App/SET_EMPLOYEES';

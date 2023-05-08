@@ -1,0 +1,11 @@
+@import '../../Styles/global.scss';
+
+.container {
+    background-color: $color-light-grey-2;
+    padding: 1rem;
+    width: fit-content;
+}
+
+.dialogTitle{
+    font-weight: bold;
+}

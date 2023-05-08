@@ -610,6 +610,12 @@ module.exports = function (webpackEnv) {
       // during a production build.
       // Otherwise React will be compiled in the very slow development mode.
       new webpack.DefinePlugin(env.stringified),
+      new webpack.ProvidePlugin({
+        // Make a global `process` variable that points to the `process` package,
+        // because the `util` package expects there to be a global variable named `process`.
+             // Thanks to https://stackoverflow.com/a/65018686/14239942
+        process: 'process/browser'
+     }),
       // Experimental hot reloading for React .
       // https://github.com/facebook/react/tree/main/packages/react-refresh
       isEnvDevelopment &&
